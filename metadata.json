@@ -1,0 +1,6 @@
+{
+  "name": "ENP Emergency Department 3-Year Strategic Development Plan",
+  "description": "แผนพัฒนาโครงการและบทบาทพยาบาลเวชปฏิบัติฉุกเฉิน (ENP) ในการร่วมพัฒนาแผนกอุบัติเหตุฉุกเฉิน 1-3 ปี สอดคล้องยุทธศาสตร์องค์กรและความปลอดภัย 2P Safety",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

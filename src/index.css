@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbar for clean horizontal tab bars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  header,
+  footer,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  .printable-document {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .printable-document * {
+    color: black !important;
+    border-color: #cbd5e1 !important;
+    background-color: transparent !important;
+  }
+
+  .printable-document h1,
+  .printable-document h2,
+  .printable-document h3,
+  .printable-document h4 {
+    color: #0f172a !important;
+  }
+
+  .printable-document table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  .printable-document th,
+  .printable-document td {
+    border: 1px solid #94a3b8 !important;
+    padding: 6px 8px !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+}
